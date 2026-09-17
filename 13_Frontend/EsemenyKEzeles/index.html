@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szinkeveres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="bealitasok">
+        <table id="szin-tabla">
+            <tr>
+                <td>Piros:</td>
+                <td><input type="range" id="red-range" min="0" max="255" value="0"></td>
+                <td><input type="number" id="red-value" min="0" max="255" value="0"></td>
+            </tr>
+            <tr>
+                <td>Zöld:</td>
+                <td><input type="range" id="green-range" min="0" max="255" value="0"></td>
+                <td><input type="number" id="green-value" min="0" max="255" value="0"></td>
+            </tr>
+            <tr>
+                <td>Kék:</td>
+                <td><input type="range" id="blue-range" min="0" max="255" value="0"></td>
+                <td><input type="number" id="blue-value" min="0" max="255" value="0"></td>
+            </tr>
+            <tr>
+                <td>Átlátszóság:</td>
+                <td><input type="range" id="op-range" min="0" max="1" value="1" step="0.01"></td>
+                <td><input type="number" id="op-value" min="0" max="255" value="1" step="0.01"></td>
+            </tr>
+        </table>
+
+        <table id="hely-tabla">
+            <tr>
+                <td>Width:</td>
+                <td><input type="range" id="width-range" min="0" max="600" value="300" step="5"></td>
+                <td><input type="number" id="width-value" min="0" max="600" value="300" step="5"></td>
+            </tr>
+            <tr>
+                <td>Height:</td>
+                <td><input type="range" id="height-range" min="0" max="600" value="300" step="5"></td>
+                <td><input type="number" id="height-value" min="0" max="600" value="300" step="5"></td>
+            </tr>
+
+            <tr>
+                <td>Margin Left:</td>
+                <td><input type="range" id="ml-range" min="-600" max="600" value="0" step="10"></td>
+                <td><input type="number" id="ml-value" min="-600" max="600" value="0" step="10"></td>
+            </tr>
+            <tr>
+                <td>Margin Top:</td>
+                <td><input type="range" id="mt-range" min="-1000" max="1000" value="0" step="10"></td>
+                <td><input type="number" id="mt-value" min="-1000" max="1000" value="0" step="10"></td>
+            </tr>
+
+           <tr>
+                <td>Border:</td>
+                <td><input type="range" id="br-range" min="0" max="300" value="0" step="10"></td>
+                <td><input type="number" id="br-value" min="0" max="300" value="0" step="10"></td>
+            </tr>
+            <tr>
+                <td>Forgatás:</td>
+                <td><input type="range" id="forog-range" min="-360" max="360" value="0" step="10"></td>
+                <td><input type="number" id="fotog-value" min="-360" max="360" value="0" step="10"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="rgb-box"></div>
+
+
+
+
+
+    <script src="functions.js"></script>
+</body>
+
+</html>

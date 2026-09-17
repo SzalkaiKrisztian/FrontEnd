@@ -1,0 +1,18 @@
+javasrpt honapok 0-tol indexeli
+static osztalyhoz kotve nem objhoz
+Beépített függvenyek
+
+findIndex		includes / (contains c#)
+findLastIndex		spread
+push			charAt
+pop			at
+spread ...		indexOf
+filter			lastIndexOf
+toString		substring(mettol meddig) / (mettol hany karakter c#)
+join			replace(mit mire)-elsot
+sort			replaceAll(mit mire)-osszes
+sort((a,b)=>a-b)	trim()
+reverse			concat
+rest			padStart/padEnd
+split			toFixed
+getFullYear

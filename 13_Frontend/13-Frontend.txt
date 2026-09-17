@@ -1,0 +1,35 @@
+Frontend:
+--------------------------------
+- JS
+- JS AJAX
+- React
+- tesztelés
+
+
+Számonkérés:
+--------------------------------
+- Röpdolgozat
+- Gyakorlati Témazáró
+- Órai munka
+- 2.0 =< van 2-es (40%)
+
+
+OLvasd:
+------------------------------
+- Online
+- Jegyzetelés => 5-ös év végén
+- ikk
+KKK: Képzési és Kimeneti követelmény
+PTT: program Tanterv
+
+
+Szalkmai Vizsga:
+-------------------------------
+1) Elmélet 20 feladat / OSZTV >60% - OSZTV 80% => 5-ös     	10%	    \
+2) Gyakorlat - 4óra(240 perc)				65pont\		90%
+3) Vizsgaremek 						55pont/ 90% /
+4) AlapVizsga									+10% alapvizsga (10.osztalyos)
+- (min 40%) mindegyikből
+
+----------------------------------------------------------------------------------------------------------------
+

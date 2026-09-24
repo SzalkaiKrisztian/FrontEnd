@@ -24,7 +24,17 @@
                         hozzavalok: ["alma","liszt","tojás","tej","cukor","fahéj"]
                     }
                     console.log(recept);
-                },2000)
+
+                    setTimeout((kategoria)=>{
+                        const sutemenyek=[
+                            {id:12,cim:"almáspite"},
+                            {id:49,cim:"Aranygaluska"},
+                            {id:145,cim:"Kakaoscsiga"}
+                        ];
+                        console.log(sutemenyek);
+                    },1500);
+
+                },2000);
             },1500);
         }
 

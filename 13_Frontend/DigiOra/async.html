@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const getReceptek = new Promise((resolve, reject) => {
+            setTimeout(() => {
+
+            })
+            resolve([82, 329, 854, 12, 78, 124]);
+        });
+
+        const recept = id => new Promise((resolve, reject) => {
+            setTimeout((id) => {
+                const recept = {
+                    id: 12,
+                    cim: "almáspite",
+                    kategoria: "sütemémy",
+                    ido: '120perc',
+                    nehezseg: 2,
+                    hozzavalok: ["alma", "liszt", "tojás", "tej", "cukor", "fahéj"]
+                };
+                if (Math.random < 0.8)
+                    resolve(recept);
+                reject("recept nem sikerult")
+            }, 1500)
+        });
+
+        const receptekKategoriaszerint = (kategoria) => new Promise((reject, resolve) => {
+            setTimeout((kategoria) => {
+                const sutemenyek = [
+                    {id: 12, cim: "almáspite"},
+                    {id: 49, cim: "Aranygaluska"},
+                    {id: 145, cim: "Kakaoscsiga"}
+                ];
+
+                if (Math.random < 0.8)
+                    resolve(sutemenyek);
+                reject("suti nem sikerult")
+            }, 1500);
+        });
+
+        async function fgv() {
+            try {
+                const receptek = await getReceptek;
+                console.log(receptek);
+
+                const egyRecept = await recept(receptek[4]);
+                console.log(egyRecept);
+
+                const sutemenyek = await receptekKategoriaszerint(egyRecept.kategoria);
+                console.log(sutemenyek);
+            }
+            catch {
+                console.log(`Hiba: `);
+            }
+        }
+
+        fgv();
+    </script>
+</body>
+
+</html>

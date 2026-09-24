@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        const getReceptek = new Promise((resolve, reject) => {
+            resolve(recept);
+        });
+
+        const recept = id =>new Promise((resolve, reject) => {
+            setTimeout((id) => {
+                const recept = {
+                    id: 12,
+                    cim: "almáspite",
+                    kategoria: "sütemémy",
+                    ido: '120perc',
+                    nehezseg: 2,
+                    hozzavalok: ["alma", "liszt", "tojás", "tej", "cukor", "fahéj"]
+                }
+            }, 1500)
+        });
+
+        const receptekKategoriaszerint = (kategoria)=> new Promise((reject, resolve) => {
+            setTimeout((kategoria) => {
+                const sutemenyek = [
+                    {id: 12, cim: "almáspite"},
+                    {id: 49, cim: "Aranygaluska"},
+                    {id: 145, cim: "Kakaoscsiga"}
+                ];
+
+                resolve(sutemenyek);
+            }, 1500);
+        });
+
+        getReceptek
+            .then(receptekId => {
+                console.log(receptekId);
+                return recept(receptekId[3]);
+            })
+            .then(receptekId => {
+                console.log(receptekId);
+            })
+            .catch(error => {
+                console.log(`Hiba ${error}`);
+            })
+
+        console.log(getReceptek)
+    </script>
+</body>
+
+</html>

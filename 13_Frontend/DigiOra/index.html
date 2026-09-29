@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalis ora</title>
+</head>
+
+<body>
+    <h1 id="time"></h1>
+
+    <script>
+        function getTime() {
+            const d = new Date();
+            const h = (d.getHours() + "").padStart(2, '0');
+            const m = (d.getMinutes() + "").padStart(2, '0');
+            const s = (d.getSeconds() + "").padStart(2, '0');
+            const ms = (d.getMilliseconds() + "").padStart(2, '0');
+
+            document.getElementById('time').innerText = `A pontos idő: ${h}:${m}:${s}:${ms}`;
+
+            setTimeout(getTime, 0.001);
+        }
+
+        getTime();
+    </script>
+</body>
+
+</html>

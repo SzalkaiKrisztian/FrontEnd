@@ -1,3 +1,24 @@
+const typeColors=new Map([
+    ['normal', '#A8A77A'],
+    ['fire', '#EE8130'],
+    ['water', '#6390F0'],
+    ['eletric', '#F7D02C'],
+    ['grass', '#7AC74C'],
+    ['ice', '#96D9D6'],
+    ['fighting', '#C22E28'],
+    ['poison', '#A33EA1'],
+    ['ground', '#E2BF65'],
+    ['flying', '#A98FF3'],
+    ['psychic', '#F95587'],
+    ['bug', '#A6B91A'],
+    ['rock', '#B6A136'],
+    ['ghost', '#735797'],
+    ['dragon', '#6F35FC'],
+    ['dark', '#705746'],
+    ['steel', '#B7B7CE'],
+    ['fairy', '#D685AD']
+]);
+
 const url="https://pokeapi.co/api/v2/pokemon/";
 
 const $=(id)=> document.getElementById(id);
@@ -24,13 +45,14 @@ let updateCard=(data)=>{
     const speed=data.stats[5].base_stat;
 
     //set
-    $("hp").innerText=hp;
+    $("hp").innerText=`HP: ${hp}`;
     $("img").src=imgSrc;
     $("poke-name").innerText=pokeName;
     $("attack").innerHTML=attack;
     $("defense").innerHTML=defense;
     $("speed").innerHTML=speed;
     appendTypes(types);
+    styleCard(types[0].type.name)
 }
 
 let appendTypes=(types)=>{
@@ -40,6 +62,16 @@ let appendTypes=(types)=>{
         span.textContent=types[i].type.name;
         $('type').appendChild(span);
     }
+}
+
+let styleCard=(type)=>{
+    const color = typeColors.get(type);
+    $('card').style.borderBlockColor=color;
+
+    $('card').style.background=`radial-gradient(circle at 50% 0%, ${color} 32%, #fff 33%)`;
+    $('type').querySelectorAll('span').forEach(span=>{
+        span.style.backgroundColor=color;
+    })
 }
 
 $("btn").addEventListener('click',getPokeData);

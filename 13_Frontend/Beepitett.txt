@@ -16,3 +16,4 @@ reverse			concat
 rest			padStart/padEnd
 split			toFixed
 getFullYear
+MAP = Dictionary

@@ -9,6 +9,7 @@ async function kereses(){
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
+    console.log(response);
 
     fillTable(data);
 }
@@ -27,6 +28,10 @@ let fillTable = (data)=>{
         let eloado = document.createElement('td');
         eloado.innerText=music.artistName;
 
+        let borito=document.createElement('td');
+        let picture = document.createElement('img');
+        picture.src=music.artworkUrl60;
+
         let cim = document.createElement('td');
         cim.innerText = music.trackName;
 
@@ -36,9 +41,17 @@ let fillTable = (data)=>{
         let ev = document.createElement('td');
         if(music.releaseDate)
             ev.innerText= music.releaseDate.substring(0,4);
+        
+        cim.onclick=()=>{
+            $('zene').src=music.previewUrl;
+            $('boritokep').src=music.artworkUrl100;
+        }
+        cim.classList.add('zene-td');
 
         tr.appendChild(sorszam);
         tr.appendChild(eloado);
+        borito.appendChild(picture);
+        tr.appendChild(borito);
         tr.appendChild(cim);
         tr.appendChild(hossz);
         tr.appendChild(ev);

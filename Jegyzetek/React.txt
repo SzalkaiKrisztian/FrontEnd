@@ -1,0 +1,29 @@
+REACT=JS könyvtár (library)
+!!! NEM teljes keretrendszer
+
+Angular, VueeJs - Keretrendszerek
+
+----------------------------------------------
+paradigma váltás:
+	js: imperativ		-hogyan	-lépés
+	React: deklarativ	-mit	-cél
+-----------------------------------------------
+JSX JS+Xhtml
+
+Komponensek,állapotok
+Virtual DOM
+
+SinglePageApplication SPA=egy weboldal azt cserelgetjuk rendereljuk
+
+node.js
+csomagkezelo npm = node package manager
+vsc
+prettier
+---------
+js import export
+
+
+REact.dev
+
+
+

@@ -1,0 +1,31 @@
+Adatmodellezés:
+1)lépés:
+Egyed reakció diagram (ER-d):
+	-Chen féle:
+		Azz egyedeket téglalapba kell helyezni, hozzájuk az attributomokat elipszisbe egyenes vonnal összekötjük.
+		ha van kulcs att. akkor aláhuzással jelöljük.
+		2 egyedet egy rombusz köt össze, erre rairjuk a kapcs tipusat 1-n n-n 1-1
+
+	-Craw's foot féle:
+		hatalmas teglalapok, kulcs alahuzassal vagy kulcsjellel.
+		2 egyedet ugy kötunk ossze hogy szarkalabbal és mi amihez
+
+2)lépés:
+er-d -> Relációs séma:
+	egyed1{awd;fdg;ghk;tuz} - pontosvesszovel elvalasztva - alahuzni a kulcsot
+	egyed2{asda;äs;fghhg;hf} - szaggatott vonal az idegenkulcs alahuzasa
+	Kapcsolat{asdas;fdsf}
+
+3)lépés:
+Relációs séma Normalizálása: 3.Norál forma
+	1normalforma teljesítése
+	2normálforma teljesítése(nincs funkcionalis fuggoseg)
+	3normálforma teljesítése(nincs tranzatív függöség)
+
+program:
+draw.io
+
+4)lépés
+Use-case diagram:
+	felhasználói szintek (visitor user admin)
+	fő funkciók

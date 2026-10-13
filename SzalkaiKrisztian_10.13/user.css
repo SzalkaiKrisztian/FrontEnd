@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+#card{
+    background-color: peachpuff;
+    border: 2px solid orange;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+}
+#generalas{
+    width: 80%;
+    background-color: orange;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid darkgoldenrod;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 10%;
+    height: 50px;
+}
+#generalas:hover{
+    background-color: darkgoldenrod;
+}
+#profil-kep{
+    border-image-width: 50%;
+    border-radius: 30%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+#neve{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.rendez{
+    width: 90%;
+    margin-left: 5%;
+}
+.rendez #lakcim{
+    margin-bottom: 10px;
+}
+.rendez #email{
+    margin-bottom: 10px;
+}
+.rendez #azonosito{
+    margin-bottom: 10px;
+}

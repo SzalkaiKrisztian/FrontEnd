@@ -25,5 +25,9 @@ js import export
 
 REact.dev
 
-
+USEAge:
+Komponens:
+function CompName(){
+return (...)
+}
 
